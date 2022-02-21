@@ -74,6 +74,8 @@ check-docs: generate-docs ## Check whether reference documentation needs to be g
 	./scripts/check-docs.sh
 .PHONY: check-docs
 
+
+
 generate-docs: ## Generate command-line reference documentation
 	rm -rf ./docs/commands/*.md
 	go run ./cmd/rhoas docs --dir ./docs/commands --file-format md
